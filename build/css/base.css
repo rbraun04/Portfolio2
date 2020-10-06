@@ -99,6 +99,7 @@ button:focus {
 	z-index: 1000;
 	display: block;
 	padding: 0.85em;
+	
 }
 
 .codrops-header {
@@ -177,13 +178,6 @@ main {
 	padding: 0.25em;
 }
 
-
-.jumbotron {
-	background-color: rgb(63, 19, 19);
-	opacity: .5;
-	
-}
-
 .demos {
 	text-align: center;
 	line-height: 2;
@@ -197,7 +191,7 @@ main {
 .content {
 	position: relative;
 	display: flex;
-	justify-content: top;
+	justify-content: center;
 	align-items: center;
 }
 

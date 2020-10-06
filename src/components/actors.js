@@ -1,23 +1,26 @@
 import React, {Component} from 'react';
-import Link from 'react-bootstrap/NavLink'
-import Nav from 'react-bootstrap/Nav'
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
+import Carousel from './Carousel'
 import Card from 'react-bootstrap/Card'
-import Button from 'react-bootstrap/Button'
-import Jumbotron from 'react-bootstrap/Jumbotron'
-import imgCMS from "../images/imgCMS";
-import Trek from "../images/imgCMS"
+import imgCMS from "../components/images/imgCMS";
 
 
 
 class Actors extends Component {
+    constructor() {
+
+        super();
+        this.state = {
+            rightPanelActive: false,
+        }
+    }
+
+
+
     render() {
-        return (
-            <>
+         const { rightPanelActive } = this.state;
+        return ( <>
             
-            <div id="content-4" className="content content--switch">
+            <div id="content-4" className = "content content--switch content--switch-current ">
 				<h2 className="content__title">Web Development</h2>
                 <div>
                     

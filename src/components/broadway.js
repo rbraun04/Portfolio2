@@ -1,15 +1,31 @@
 import React, {Component} from 'react';
+import Carousel from './Carousel'
 
 
 class Broadway extends Component {
+    constructor() {
+
+        super();
+        this.state = {
+            rightPanelActive: false,
+        }
+    }
+
+
+
     render() {
+         const { rightPanelActive } = this.state;
         return (
-            <div id="content-3" className="content content--switch">
-            <h2 className="content__title">Broadway</h2>
-            <div className="content__subtitle">Belters</div>
+            <div className="App">
+                <div> 
+                    Here are all of the Broadway Actors
+                    <Carousel />
+                    
+                    {/*  */}
+                    
+                </div>
             </div>
-        )
+        );
     }
 }
-
 export default Broadway;
