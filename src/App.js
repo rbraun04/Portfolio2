@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from './pages/Home';
-import Landing from "./components/Landing";
+import Landing from "./components/landing";
 
 import NoMatch from "./pages/NoMatch";
 
@@ -9,10 +9,9 @@ import Navbar from "./components/Navbar";
 import Wrapper from "./components/Wrapper";
 
 import Broadway from './components/broadway';
-// import Dancers from './components/Dancers';
-import Dancers from "./Dancers";
-import Actors from './components/Actors';
-import Artists from "./components/Artists";
+import Dancers from './components/dancers';
+import Actors from './components/actors';
+import Artists from "./components/artists";
 import Musicians from './components/Musicians';
 
 
