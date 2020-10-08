@@ -6,13 +6,13 @@ import Landing from "./components/landing";
 import NoMatch from "./pages/NoMatch";
 
 import Navbar from "./components/Navbar";
-import Wrapper from "./components/Wrapper";
+import Wrapper from "./components/wrapper";
 
 import Broadway from './components/broadway';
 import Dancers from './components/dancers';
 import Actors from './components/actors';
 import Artists from "./components/artists";
-import Musicians from './components/Musicians';
+import Musicians from './components/musicians';
 
 
 // import './App.css';
@@ -24,8 +24,8 @@ function App() {
     <Router>
 
       <Wrapper>
-        <Switch>
-          <Route exact path="/" component={Landing}/>
+        {/* <Switch> */}
+          <Route exact path="/" component= {Landing}/>
           <Route exact path = "/musicians" component = {Musicians} />
           <Route exact path = "/artists" component = {Artists} />
           <Route exact path = "/actors" component = {Actors} />
@@ -38,7 +38,7 @@ function App() {
           {/* <Route path="/pages/Payment/:title/:price" component={Payment}/>  
           <Route path="/team" component={Team} />         */}
           <Route component={NoMatch} />
-        </Switch>
+        {/* </Switch> */}
       </Wrapper>
     </Router>
     </div>
